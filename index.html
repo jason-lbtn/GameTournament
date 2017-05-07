@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset='utf8'/>
+        <link rel="stylesheet" href="style/main.css"/>
+        <link rel="stylesheet" href="style/match_interface.css"/>
+        <title>Game Tournament</title>
+    </head>
+    <body>
+        <h1>Game Tournament</h1>
+        <table>
+            <tr>
+                <td>
+                    <input class="form_input" id="participants_list" onkeydown="Javascript: if(event.keyCode == 13) create_players();" placeholder="Joueur1, Joueur2, etc.">
+                    <br><br><br>
+                    <div id="teams_container"></div>
+                </td>
+                <td id="canvas_container"></td>
+            </tr>
+        </table>
+    </body>
+    
+    <!-- Chargement des ressources -->
+    <script type="application/javascript" src="resources/konva.min.js"></script>
+    <script type="application/javascript" src="resources/functions.js"></script>
+    
+    <!-- Chargement des classes -->
+    <script type="application/javascript" src="scripts/Player.js"></script>
+    <script type="application/javascript" src="scripts/Team.js"></script>
+    <script type="application/javascript" src="scripts/Match.js"></script>
+
+    
+    <!-- Chargement des fonctions principales -->
+    <script type="application/javascript" src="scripts/create_teams.js"></script>
+    <script type="application/javascript" src="scripts/create_players.js"></script>
+    <script type="application/javascript" src="scripts/create_match.js"></script>
+    <script type="application/javascript" src="scripts/gen_tree.js"></script>
+    <script type="application/javascript" src="scripts/Tournament.js"></script>
+    
+    
+    <script type="application/javascript">    
+        /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        Liste participants (ex) : Jason, Eroan, Quentin, Gulian, Thomas, Léo, Ludovic, Damien, Jean, Chris, Annas, Pierre-Luc, Bastien, Babet, Naigon, Pannechou
+        
+            EXEMPLE DE CREATION D'INTERFACE DE MATCH
+            
+            <!-- HTML CODE -->
+        
+            <button onclick="make_test()"></button>
+            <div id="test"></div>
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+        var m1, m1_interface;
+        
+        function make_test() {
+            m1 = new Match([teams_table[0].getPlayers()[0], teams_table[1].getPlayers()[0]], 1);
+            m1.setPlayerHandicap(teams_table[0].getPlayers()[0], handicaps_list[2][0], 2);
+            m1.setPlayerHandicap(teams_table[1].getPlayers()[0], handicaps_list[1][0], 1);
+            
+            m1_interface = new Graph_interface(m1);
+            m1_interface.implement(document.getElementById('test'));
+        }
+        
+    </script>
+</html>

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'ssf4';
+    src: url(../fonts/ssf4_font.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.match_interface {
+    display: inline-block;
+    border: .1em solid rgb(65,65,65);
+    border-radius: .5em;
+    box-shadow: 0 0 .5em silver;
+    font-family: 'ssf4';
+    padding: .5em;
+}
+.player_infos {
+    display: inline-block;
+    font-size: 1.5em;
+    border: .1em solid gray;
+    border-radius: .5em;
+    padding: .5em;
+}
+.player1 {
+    color: rgb(255, 102, 102);
+}
+.player2 {
+    color: rgb(102, 165, 255);
+}
+.middle-el {
+    display: inline-block;
+    border-radius: 50em;
+    padding: .2em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.player_handicap {
+    display: block;
+    font-size: .6em;
+    font-weight: 100;
+    color: black;
+    border: .1em solid gray;
+    border-radius: .5em;
+    padding: .2em;
+}
+.add_handicap {
+    font-size: .7em;
+}
+.hlevel_btn {
+    background: none;
+    background-color: white;
+    padding: .2em;
+    border: .1em solid black;
+    border-radius: 50em;
+    font-family: 'ssf4';
+    font-size: 1.25em;
+} .hlevel_btn:hover {
+    color: rgb(255, 102, 102);
+    cursor: pointer;
+}

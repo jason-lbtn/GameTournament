@@ -1,0 +1,21 @@
+- Le nombre de participants entrés doit être une puissance de 2 sous la forme "Joueur1, Joueur2, Joueur3, Joueur4, etc."
+
+- LES RONDS DANS LE TOURNOI REPRÉSENTENT DES MATCHS
+--- Survoler un rond : Affichage des personnes qu'oppose ce match
+--- Cliquer sur un rond : Ouverture de l'interface de match
+----- Les petits ronds sous les noms des joueurs représentent un niveau de handicap que peut être pris ou non (cliquer sur le rond en place 1, 2 ou 3 pour un handicap respectivement de niveau 1, 2 ou 3)
+----- GO pour marquer le démarrage d'un match, OVER pour en marquer la fin (temps enregistré), Cliquer sur le nom du joueur gagnant
+
+- ÉTAGE 0 : Étage d'initiation des matchs
+-> Cet étage met en place des matchs entre équipes directement et non entre joueurs, avec un représentant par équipe tiré au sort
+-> Cela sert à déterminer quel sera le joueur, dans chaque équipe, à concourir dans le tournoi ascendant ou descendant
+
+
+- TOURNOI ASCENDANT
+-- Basé sur le gain : un match remporté fait gagner 1 point + le niveau du handicap choisis (Ex: handicap niveau 2 -> 1 + 2 = 3 points remportés)
+
+- TOURNOI DESCENDANT
+-- Basé sur la mise : un match entraine, pour l'équipe perdante, une perte de 1 point + la somme des niveau des handicaps choisis par les opposants (Ex: Joueur 1 -> Handicap niveau 2 et Joueur 2 -> Handicap niveau 3 --> 1 + 2 + 3 = 6 points en jeu pour ce match)
+
+
+LEBRETON JASON
